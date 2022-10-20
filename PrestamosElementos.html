@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" class="min-vh-100">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="sass.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="shortcut icon" href="assets/img/lulogo_PLumita.svg" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Krub:wght@200&display=swap" rel="stylesheet">
+  <title>Prestamos</title>
+</head>
+
+<body>
+  <!--header-->
+  <div class="linea">
+  </div>
+  <nav class="navbar row d-flex justify-content-center align-items-center navbar-expand-lg   ">
+    <div class="col-3 justify-content-center d-flex">
+      <div>
+        <img src="assets/img/lulogo_PLumita.svg" alt="Logo colegioS" width="100px" height="80px">
+      </div>
+    </div>
+    <div class=" col-6  d-flex justify-content-center align-items-center ">
+      <h1>SISCONVER LIBRARY SYS</h1>
+    </div>
+    <div class="col-sm-3 col-4 d-flex justify-content-end align-items-center">
+      <a href="home.html" title="cerrar-sesion"><button type="button" class="btn-warning btn btn-lg">
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z" />
+            <path fill-rule="evenodd"
+              d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+          </svg>
+      </a></button>
+    </div>
+  </nav>
+  <!--contenedor-->
+  <div class=" vh-100 d-flex justify-content-center align-items-center">
+    <!--contenedorform-->
+    <form action="" class="con_se_u d-flex flex-row justify-content-center rounded-5 align-items-center  text-center ">
+      <div class="row  d-flex justify-content-center align-items-center ">
+        <h1 class="d-flex justify-content-center h1">Prestamos Libros</h1>
+        <!--col1-->
+        <div class="col-6 col-sm-6 contenedor_f  ">
+          <label for="Fecha" class="form-label  ">Fecha del prestamo</label>
+          <input type="date" class="form-control form-control-lg" aria-describedby="emailHelp" required>
+          <label for="Fechad" class="form-label">Fecha de la devolucion</label>
+          <input type="date" class="form-control form-control-lg" required>
+          <label for="exampleFormControlTextarea1" class="form-label">Novedades:</label>
+          <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1" cols="30" rows="1"></textarea>
+        </div>
+        <!--col2-->
+        <div class=" col-6 col-sm-6 contenedor_f  ">
+          <label for="Nombre del Alumno" class="form-label">Nombre del Alumno</label>
+          <input type="Text" class="form-control form-control-lg" placeholder="Digite el nombre del alumno" required>
+          <label for="Nombre del Libro" class="form-label">Nombre del Elemento</label>
+          <input type="text" class="form-control form-control-lg" placeholder="Digite el nombre del libro" required>
+          <label for="Nombre del Prestador" class="form-label">Nombre del Prestador</label>
+          <input type="text" class="form-control form-control-lg" placeholder="Digite el nombre del prestador" required>
+        </div>
+        <div class="d-grid gap-2 col-6 mx-auto m-4">
+          <button type="submit" class="btn btn-lg   button btn-warning text-light">Prestar</button>
+          <button type="button" class="btn btn-lg btn-primary"><a href="Libros_Cards_.html">Cancelar</a></button>
+        </div>
+      </div>
+  </div>
+  </form>
+  <!--footer-->
+  <footer class="row container-fluid  d-flex flex-column ">
+    <div class="col d-flex  justify-content-around align-items-center">
+      <div class=""><img src="assets/img/icons8-facebook-nuevo.svg" alt="" class=" "></div>
+      <div class=""><a
+          href="https://api.whatsapp.com/send/?phone=%2B573108580280&text&type=phone_number&app_absent=0"><img
+            src="assets/img/icons8-whatsapp.svg"></a> </div>
+      <div class=""><img src="assets/img/icons8-phone.svg" alt="" class=" "></div>
+    </div>
+    <div class="col"></div>
+    <div class="col">
+      <p class=" text-center">copyright Sena 2022 © </p>
+    </div>
+  </footer>
+  <!--script-->
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
