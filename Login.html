@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <link rel="stylesheet" href="/css/newStyle.css">
+<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+
+  <link rel="shortcut icon" href="/assets/img/lulogo_PLumita.svg" type="image/x-icon">
+  
+  
+  <title>Inicio sesion</title>
+</head>
+
+<body>
+  <!--header-->
+ <header>
+  <nav class="navbar  d-flex justify-content-center align-items-center navbar-expand-lg ">
+    <div class="col-2 justify-content-center d-flex">
+      <div>
+        <img src="/assets/img/lulogo_PLumita.svg" alt="Logo colegioS" width="200px" height="85px">
+      </div>
+    </div>
+    <div class=" col-7  d-flex justify-content-center align-items-center ">
+      <h1 class="text-danger">SYSTEM LIBRARY LA INDEPENDENCIA</h1>
+    </div>
+    <div class="col-sm-2  col-4 d-flex justify-content-end align-items-end ">
+      <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle btn-lg" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          Ajustes
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item fs-5" href="#">Ayuda</a></li>
+          <li><a class="dropdown-item fs-5" href="#">Activar</a></li>
+          
+        </ul>
+      </div>
+
+
+
+  </div>
+
+
+   
+  </nav>
+ </header>
+ 
+  
+  
+  
+  
+  <main class="Contenedor--login ">
+  
+    <form class=" Contenedor__login--Formulario  flex-column  d-flex justify-content-center align-items-center text-center mt-1 needs-validation" novalidate >
+  
+      <h2 class="m-2">INICIO DE SESION</h2>
+  
+  
+  
+  
+  
+      <img class="" src="/assets/img/escudo-colegio-nombre.png" alt="Escudo  Colegio" width="80px" height="80px">
+  
+      <div class="col-7">
+  
+        <img src="/assets/img/usuario_inicio.png" width="30px" alt="icono usuario">
+        <label for="formGroupExampleInput" class="col-form-label-lg h1 ">Usuario</label>
+        <input type="text"  class="form-control form-control-lg  text-center"   pattern="[A-Z-a-z-@]{4,40}" id="formGroupExampleInput" placeholder="Digite su usuario"  required>
+        <div class="valid-feedback">
+            <p class="fs-5">Correcto..!</p>
+          </div>
+
+          <div class="invalid-feedback">
+            <p class="fs-5">Por Favor verifica los datos ingresados.</p>
+          </div>
+  
+      </div>
+  
+      <div class="col-7">
+        <img src="/assets/img/candado.png" width="30px" alt="">
+        <label for="formGroupExampleInput2" class="col-form-label-lg h1  ">Contraseña</label>
+        <input type="password" maxlength="8" class="form-control p-2 form-control-lg text-center" 
+          placeholder="Digite Contraseña"  pattern="[0-9]{8,20}" required >
+
+          <div class="valid-feedback">
+            <p class="fs-5">Correcto..!</p>
+          </div>
+
+          <div class="invalid-feedback">
+            <p class="fs-5" >Por Favor verifica los datos ingresados.</p>
+          </div>
+  
+      </div>
+  
+      
+      <button type="submit" class="btn btn-lg col-6   btn-primary text-lingth m-4 "
+          class="text-light text-decoration-none" > <a href="home.html" class="text-white text-decoration-none">Iniciar sesión</a> </button> 
+      
+
+
+        
+      
+  
+      </div>
+    
+      
+        <button type="button" class="btn btn-warning btn-lg  text-white m-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Crear cuenta</button>
+        <a href="#"><h5 class=""> Olvide mi contraseña ?</h5></a>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="fs-1 h1">Registro</h1>
+
+        
+
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="" class="Contenedor__Registro--Formulario rounded-5 text-center  needs-validation " method="post"
+    enctype="multipart/form-data" target="self" id="form" novalidate >
+    <div class="row  d-flex justify-content-evenly align-items-center " id="fomr1">
+      
+      <!--colum1form-->
+      <div class="col-sm-5 col-12 columna__fo ">
+        <label for="nombre" class="form-label ">
+          <span class="label"> Nombres:</span>
+        </label>
+        <input type="text" name="nombre" placeholder="Ingrese sus nombres" required
+          class="form-control form-control-lg text-center">
+        <label for="telefono">Telefono:</label>
+        <input type="tel" name="telefono" pattern="^[/D3][0-9]{9}$" required placeholder="3*********" maxlength="10"
+          class="form-control form-control-lg text-center">
+        <label for="correo">Correo:</label>
+        <input type="email" name="correo" required placeholder="name@example.com"
+          class="form-control form-control-lg text-center">
+        <label for="N_documento">Número de Documento:</label>
+        <input type="number" id="documento" name="N_documento" placeholder="###" pattern="^[0-9]+" minlength="10" required 
+          class="form-control form-control-lg text-center">
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" required placeholder="********" minlength="8" 
+          class="form-control form-control-lg text-center">
+        <label for="c.contraseña">Confirme su contraseña:</label>
+        <input type="password" name="c.contraseña" required placeholder="*******" minlength="8"
+          class="form-control form-control-lg text-center">
+
+      </div>
+      <!--Columna2form-->
+      <div class="col-sm-5 col-12 columna__fo ">
+        <label for="apellido">Apellidos:</label>
+        <input type="text" name="apellido" placeholder="ingrese sus apellidos" required
+          class="form-control text-center form-control-lg">
+        <label for="rol">Rol:</label>
+        <input name="rol" placeholder="Elija su rol" required list="rol"
+          class="form-control text-center form-control-lg">
+        <datalist id="rol">
+          <option value="Estudiante">Estudiante</option>
+          <option value="Docente">Docente</option>
+          <option value="Externo">Externo</option>
+        </datalist>
+        <label for="curso">Curso:</label>
+        <input name="curso" placeholder="Ingrese su curso" required list="curso"
+          class="form-control text-center form-control-lg">
+        <datalist id="curso">
+          <option value="Primero">Primero</option>
+          <option value="Segundo">Segundo</option>
+          <option value="Tercero">Tercero</option>
+          <option value="Cuarto">Cuarto</option>
+          <option value="Quinto">Quinto</option>
+          <option value="Sexto">Sexto</option>
+          <option value="Septimo">Septimo</option>
+          <option value="Octavo">Octavo</option>
+          <option value="Noveno">Noveno</option>
+          <option value="Decimo">Decimo</option>
+          <option value="Once">Once</option>
+          <option value="Otro">Otro</option>
+        </datalist>
+        <label for="T.doc" id="letra2">Tipo documento:</label>
+        <input name="T.doc" placeholder="Elija su tipo de documento" required list="T.doc"
+          class="form-control text-center form-control-lg">
+        <datalist id="T.doc">
+          <option value="Tarjeta de identidad"></option>
+          <option value="Cedula de ciudadania"></option>
+          <option value="Cedula externa"></option>
+          <option value="Otro"></option>
+        </datalist>
+        <label for="foto">Imagen perfil:
+        </label>
+        <img src="/assets/img/user-regular.svg" alt="" class="d-flex justify-content-center align-self-center"
+          width="50px" height="50px">
+        <input type="file" name="foto" placeholder="Suba una imagen" accept="image/png, .jpg"
+          class="form-control text-center form-control-lg">
+      </div>
+      <!--boton-->
+      
+      <button type="button" class="btn btn-danger btn-lg col-7 mt-4" data-bs-dismiss="modal">Volver</button>
+      <button type="button" class="btn btn-primary btn-lg col-7 mt-4" >Registrarse</button>
+      <!---->
+    </div>
+</form>
+      </div>
+      
+       
+     
+    </div>
+  </div>
+</div>
+    </div>
+    </form>
+    
+
+  </main>
+  <footer class="py-5 ">
+    <div class="col-12 d-flex  justify-content-around align-items-center ">
+        <div class=""><img src="/assets/img/icons8-facebook-nuevo.svg" alt="" class=" "></div>
+        <div class=""><a
+                href="https://api.whatsapp.com/send/?phone=%2B573108580280&text&type=phone_number&app_absent=0"><img
+                    src="/assets/img/icons8-whatsapp.svg"></a> </div>
+        <div class=""><img src="/assets/img/icons8-phone.svg" alt="" class=" "></div>
+    </div>
+    <div class="col">
+        <p class=" text-center fs-4">Copyright SISCONVER 2022 © </p>
+    </div>
+</footer>
+<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="/Graficas/valida.js"></script>
+
+
+
+</body>
+
+</html>

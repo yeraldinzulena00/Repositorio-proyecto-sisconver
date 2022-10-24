@@ -1,81 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="sass.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="assets/img/lulogo_PLumita.svg" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@200&display=swap" rel="stylesheet">
-    <title>Inicio sesión</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="sass.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="assets/img/lulogo_PLumita.svg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Krub:wght@200&display=swap" rel="stylesheet">
+  <title>Inicio sesión</title>
 </head>
+
 </html>
-    <body class="">
-        <div class="linea">
-        </div>
-        <nav class="navbar row d-flex justify-content-center align-items-center navbar-expand-lg  ">
-          <div class="col-3 justify-content-center d-flex">
-            <div>
-              <img src="assets/img/lulogo_PLumita.svg" alt="Logo colegioS" width="200px" height="85px">
-            </div>
-          </div>
-          <div class=" col-6  d-flex justify-content-center align-items-center ">
-            <h1>SYSTEM LIBRARY LA INDEPENDENCIA</h1>
-          </div>
-          <div class="col-3 justify-content-center d-flex">
-            <a href="Logueo.html">
-              <button type="button" class="btn btn-warning btn-lg text-white">Crear cuenta</button></a>
-          </div>
-        </nav>
-    
+
+</div>
+<nav class="navbar  d-flex justify-content-center align-items-center navbar-expand-lg  ">
+  <div class="col-3 justify-content-center d-flex">
+    <div>
+      <img src="assets/img/lulogo_PLumita.svg" alt="Logo colegioS" width="200px" height="85px">
+    </div>
+  </div>
+  <div class=" col-6  d-flex justify-content-center align-items-center ">
+    <h1>SYSTEM LIBRARY LA INDEPENDENCIA</h1>
+  </div>
+  <div class="col-3 justify-content-center d-flex">
+
+  </div>
+</nav>
 
 
 
-        <div class="form d-flex flex-column col-12 ">
-                
-            <form class=" f2 col-9 flex-column col-sm-3 d-flex justify-content-center align-items-center text-center mt-2">
 
-                <h1 class="h1">INICIO DE SESION</h1>
-               
-                    <div class="col-12 col-sm-8 ">
+<main class="form  ">
 
-                        <div class="">
+  <form class=" f2  flex-column  d-flex justify-content-center align-items-center text-center mt-1">
 
-                            <img src="assets/img/escudo-colegio-nombre.png" alt="">
-                        </div>
-                        <div class="m-4">
-                            <img src="assets/img/usuario_inicio.png" width="30px" alt="">
-                            <label for="formGroupExampleInput" class="col-form-label-lg h1">Usuario</label>
-                            <input type="text" class="form-control form-control-lg  text-center" id="formGroupExampleInput" placeholder="Digite su usuario">
-                          </div>
-                          <div class="m-4">
-                            <img src="assets/img/candado.png" width="30px" alt="">
-                            <label for="formGroupExampleInput2" class="col-form-label-lg h1 
+    <h4 >INICIO DE SESION</h4>
+
+
+
+
+
+    <img class="img-fluid col-4" src="assets/img/escudo-colegio-nombre.png" alt="Escudo  Colegio" width="40px" height="80px">
+
+    <div class="col-10">
+
+      <img src="assets/img/usuario_inicio.png" width="30px" alt="icono usuario">
+      <label for="formGroupExampleInput" class="col-form-label-lg h1 ">Usuario</label>
+      <input type="text" class="form-control form-control-lg  text-center" id="formGroupExampleInput"
+        placeholder="Digite su usuario">
+
+    </div>
+
+    <div class="col-10">
+      <img src="assets/img/candado.png" width="30px" alt="">
+      <label for="formGroupExampleInput2" class="col-form-label-lg h1 
                             ">Contraseña</label>
-                            <input type="password" class="form-control form-control-lg text-center" id="formGroupExampleInput2" placeholder="Digite Contraseña">
-                          </div>
+      <input type="password" maxlength="8" class="form-control p-2 form-control-lg text-center" required pattern=""
+        placeholder="Digite Contraseña">
 
-                          <button type="submit" class="btn btn-lg   btn-warning text-lingth m-4 "><a href="home.html" class="text-light" >Iniciar sesión</a> </button>
-                          <button type="submit" class="btn btn-lg   btn-primary text-lingth m-2"><a href="home.html" class="text-light" >Olvide mi contraseña ?</a> </button>
-                    
-                </div>
-               
-            </form>
-        </div>
-        <footer class="row   d-flex flex-column ">
-            <hr>
-            <div class="col d-flex  justify-content-around align-items-center">
-                <div class=""><img src="assets/img/icons8-facebook-nuevo.svg" alt="" class=" "></div>
-                <div class=""><a
-                        href="https://api.whatsapp.com/send/?phone=%2B573108580280&text&type=phone_number&app_absent=0"><img
-                            src="assets/img/icons8-whatsapp.svg"></a> </div>
-                <div class=""><img src="assets/img/icons8-phone.svg" alt="" class=" "></div>
-            </div>
-                <p class=" text-center ">Copyright Syscosys 2022 © </p>
-            </div>
-        </footer>
-    
+    </div>
+
+    <button type="button" class="btn btn-warning col-6  text-white m-4">Crear cuenta</button>
+    <button type="submit" class="btn btn-lg col-6   btn-primary text-lingth m-4 "><a href="home.html"
+        class="text-light">Iniciar sesión</a> </button>
+    <a href="home.html" class="text-primary display-6">Olvide mi contraseña ?</a>
+
+    </div>
+
+  </form>
+</main>
+
+
 </body>
+
 </html>

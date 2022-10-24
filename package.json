@@ -1,5 +1,5 @@
 {
-  "name": "grupo_2_sisconver",
+  "name": "siscon5.0",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.2.1",
-    "bootstrap-icons": "^1.9.1"
+    "bootstrap": "^5.2.2",
+    "chart.js": "^3.9.1"
   }
 }

@@ -1,0 +1,191 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Krub', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+:root {
+
+    --a: linear-gradient(to bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    --b: linear-gradient(to bottom, #051937, #003f64, #00698e, #0097b3, #00c6cf);
+}
+
+
+
+
+
+
+
+
+@font-face{
+
+    font-family:'Krub';
+    src:url('/Fuentes/Krub-ExtraLightItalic.ttf');
+    font-weight: 900px;
+    font-style:italic;
+    font-stretch: condensed;
+    unicode-range: "U+0-10FFFF";
+}
+
+
+
+
+
+
+
+
+nav{
+    font-family: 'Krub';
+   
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Krub';
+   
+
+
+}
+
+main {
+    background-color: #fff;
+    background-image:
+        linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+        linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;
+    font-family: 'Krub';
+}
+
+
+section{
+    background-color: #fff;
+background-image:
+linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+linear-gradient(#eee .1em, transparent .1em);
+background-size: 100% 1.2em;
+font-family: 'Krub';
+
+}
+
+/* Login */
+
+.Contenedor--login {
+
+    height: 86vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Krub';
+
+
+}
+
+
+.Contenedor__login--Formulario {
+
+
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 300px;
+
+    border: solid 3px rgba(179, 182, 185, 0.548);
+    font-family: 'Krub';
+}
+
+
+/*panel*/
+.usu_a {
+    box-shadow: 4px 4px 4px 4px rgba(220, 57, 18, 0.7);
+    transition: 1s linear;
+}
+
+.usu_a:hover {
+    box-shadow: 4px 4px 4px 4px rgba(168, 255, 80, 0.7);
+    transform: scale(.9);
+
+}
+
+.usu_2 {
+    box-shadow: 4px 4px 4px 4px rgba(255, 153, 0, 0.7);
+    transition: 1s linear;
+}
+
+.usu_2:hover {
+    box-shadow: 4px 4px 4px 4px rgba(223, 53, 253, 0.886);
+    transform: scale(.9);
+}
+
+.usu_3 {
+    box-shadow: 4px 4px 4px 4px rgba(51, 102, 204, 0.7);
+    transition: 1s linear;
+}
+
+.usu_3:hover {
+    box-shadow: 4px 4px 4px 4px rgba(255, 102, 161, 0.7);
+    transform: scale(.9);
+}
+
+.usu_4 {
+    box-shadow: 4px 4px 4px 4px rgba(16, 150, 24, 0.7);
+    transition: 1s linear;
+}
+
+.usu_4:hover {
+    box-shadow: 4px 4px 4px 4px rgba(255, 37, 37, 0.862);
+    transform: scale(.9);
+}
+
+.usu_5 {
+    box-shadow: 4px 4px 4px 4px rgba(153, 0, 153, 0.7);
+    transition: 1s linear;
+}
+
+.usu_5:hover {
+    box-shadow: 4px 4px 4px 4px rgba(79, 220, 255, 0.899),
+        0px 0px 4px 4px rgb(237, 100, 225);
+    transform: scale(.9);
+}
+
+.usu_c {
+    transition: 1s linear;
+}
+
+.usu_c:hover {
+    box-shadow: 4px 4px 4px 4px rgba(79, 220, 255, 0.899),
+        0px 0px 4px 4px rgb(237, 100, 225);
+    transform: scale(.9);
+}
+
+/*Home */
+
+
+#grafica {
+    max-width: 350px;
+    max-height: 300px;
+    font-family: 'Krub';
+}
+
+
+
+/*Registro*/
+.Contenedor__Registro--Formulario{
+
+    height: 450px;
+    background-color: #ffffff;
+    border: solid 3px rgba(179, 182, 185, 0.548);
+} 
+
+.columna__fo{
+
+    height: 70%;
+}

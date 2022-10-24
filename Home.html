@@ -4,130 +4,186 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="sass.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="shortcut icon" href="assets/img/lulogo_PLumita.svg" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@200&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/newStyle.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="shortcut icon" href="/assets/img/lulogo_PLumita.svg" type="image/x-icon">
+    
     <title>Home</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
+
+
+    <script src="/node_modules/chart.js/dist/chart.min.js"></script>
 
 
 </head>
 
 <body class="">
     <!--header-->
-    <div class="linea">
-    </div>
-    <nav class=" row  sticky-top ">
+   
+<header>
+    <nav class="  sticky-top d-flex border  ">
 
 
-        <div class="col-sm-2 col-12 d-flex justify-content-center align-items-center ">
-            <img class="T" src="assets/img/lulogo_PLumita.svg" alt="Logo colegioS" width="100px" height="100px">
-            <h1>SISCONVER LIBRARY SYS</h1>
+        <div class="col-sm-3 col-5 d-flex justify-content-center align-items-center ">
+            <img class="" src="/assets/img/lulogo_PLumita.svg" alt="Logo colegioS" width="200px" height="80px">
+            <h1 class="p-1 text-danger">SISCONVER LIBRARY SYS</h1>
         </div>
-        
 
 
 
-      
-            <div class="col-12 col-sm-9 justify-content-around d-flex align-items-center">
-                    <a class="nav-link nav-item active letra" aria-current="page" href="Libros_Cards_.html">
-                        <h2 class="text_l">Libros </h2>
-                    </a>
-                    <a class="nav-link nav-item  " href="elementos.html ">
-                        <h2 class="text_l">Elementos </h2>
-                    </a>
-                    <a class="nav-link nav-item " href="usuarios2.html">
-                        <h2 class="text_l">Usuarios</h2>
-                    </a>
-                    <a class="nav-link nav-item  " href="pres_dev.html">
-                        <h2 class="text_l">Prestamos </h2>
-                    </a>
-         </div>
-         <div class="col-sm-1  col-12 d-flex justify-content-end align-items-center">
-            <a class="nav-item" href="home.html" title="cerrar-sesion"><button type="button"
-                    class="btn btn-warning m-5 btn-lg">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-box-arrow-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z" />
-                        <path fill-rule="evenodd"
-                            d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
-                    </svg>
-            </a></button>
-    </div>
-</nav>
+
+
+        <div class="col-12 col-sm-5 justify-content-between d-flex align-items-center p-1 ">
+            <a class="nav-link nav-item active letra" aria-current="page" href="Libros_Cards_.html">
+                <h2 class=" ">Libros </h2>
+            </a>
+            <a class="nav-link nav-item  " href="elementos.html ">
+                <h2 class="  ">Elementos </h2>
+            </a>
+            <a class="nav-link nav-item " href="Faltan/tabla_usuarios.html">
+                <h2 class=" ">Usuarios</h2>
+            </a>
+            <a class="nav-link nav-item  " href="Faltan/tabla_pres_dev.html">
+                <h2 class="  ">Prestamos </h2>
+            </a>
+        </div>
+        <div class="col-sm-4  col-4 d-flex justify-content-around align-items-end ">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <h3>Hola Bienvenido: admin</h3>
+                <figcaption class=" border-1 bg-primary rounded-circle ">
+                    
+                    <img src="/assets/img/trabajando.png" class="rounded-circle " alt="imagen de perfil" width="40px"
+                        height="40px">
+                </figcaption>
+            </div>
+           
+
+            <div class="  dropdown ">
+                <button class="btn btn-primary dropdown-toggle btn-lg" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Opciones
+                </button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <h3 class="dropdown-item">Ayuda</h3>
+                    </li>
+                    <li><figure><img src="/assets/img/sol.png" alt="" width="30px" height="30px"></figure></li>
+                    <li>
+                        <h3 class="dropdown-item">Salir</h3>
+                    </li>
+                </ul>
+            </div>
+
+
+
+        </div>
+
+    </nav>
+</header>
+   
+    <main class="container-sm container-md container-lg">
     <!--panel-->
-        <div class=" d-flex flex-grow-1 flex-wrap justify-content-around align-items-center mt-5">
-            <h1 class="text-center h1_panel m-auto col-12">Panel de estadisticas</h1>
-            <div class="col-12 col-sm-2 col-lg-2 col-md-4 bg-light border rounded-4 d-flex m-4 usu_a  ">
-                <img src="assets/img/trabajando.png" alt="" height="100px">
-                <div class="d-flex justify-content-center align-items-center flex-column">
-                    <h2>Usuarios</h2>
-                    <h2>Total:200</h2>
-                </div>
-            </div>
-            <div class="col-12 col-sm-2 col-lg-2 col-md-4 bg-light rounded-4 border d-flex usu_2   ">
-                <img src="assets/img/dado.png" alt="" height="100px">
-                <div class="d-flex justify-content-center align-items-center flex-column">
-                    <h2>Elementos</h2>
-                    <h2>Total:123</h2>
-                    <h4>Disponibles:123</h4>
-                </div>
-            </div>
-            <div class="col-12 col-sm-2 col-lg-2 col-md-4 bg-light d-flex usu_3 border rounded-4">
-                <img src="assets/img/icons8-ibooks.svg" alt="" height="100px">
-                <div class="d-flex justify-content-center align-items-center flex-column">
-                    <h2>Libros</h2>
-                    <h2>Total:123</h2>
-                    <h4>Disponibles:123</h4>
-                </div>
-            </div>
-            <div class="col-12 col-sm-2 col-lg-2 col-md-4 bg-light d-flex usu_4 border  rounded-4">
-                <img src="assets/img/pedir-prestado.png" alt="" height="100px">
-                <div class="d-flex justify-content-center align-items-center flex-column">
-                    <h2>Prestamos</h2>
-                    <h2>Total:12</h2>
-                </div>
-            </div>
-            <div class="col-12 col-sm-2 col-lg-2 col-md-4 bg-light d-flex usu_5 border rounded-4">
-                <img src="assets/img/return.png" alt="" height="100px">
-                <div class="d-flex justify-content-center align-items-center flex-column">
-                    <h3>Devoluciones</h3>
-                    <h2>Total:1</h2>
-                    <h3>Pendientes:10</h3>
-                </div>
+    <h3 class="text-center   col-12 mt-4">PANEL DE ESTADISTICAS</h3>
+
+    <section class=" d-flex flex-grow-1 flex-wrap justify-content-around align-items-center  p-3">
+
+        <div class="col-12 col-sm-2 bg-light border rounded-4 d-flex usu_a p-1 flex-column justify-content-center align-items-center">
+            <img src="/assets/img/trabajando.png" alt="" height="50px" width="50px" >
+            <div class="d-flex justify-content-center align-items-center flex-column">
+                <h2>Usuarios</h2>
+                <h2>Total:200000</h2>
             </div>
         </div>
+        <div class="col-12 col-sm-2 bg-light rounded-4 border d-flex usu_2 flex-column justify-content-center align-items-center  ">
+            <img src="/assets/img/dado.png" alt="" height="50px" width="50px">
+            <div class="d-flex justify-content-center align-items-center flex-column">
+                <h2>Elementos</h2>
+                <h2>Total:123</h2>
+            
+            </div>
+        </div>
+        <div class="col-12 col-sm-2 bg-light d-flex usu_3 border rounded-4 flex-column justify-content-center align-items-center ">
+            <img src="/assets/img/icons8-ibooks.svg" alt="" height="50px" width="50px">
+            <div class="d-flex justify-content-center align-items-center flex-column">
+                <h2>Libros</h2>
+                <h2>Total:123</h2>
+              
+            </div>
+        </div>
+        <div class="col-12 col-sm-2 bg-light d-flex usu_4 border  rounded-4 flex-column justify-content-center align-items-center ">
+            <img src="/assets/img/pedir-prestado.png" alt="" height="50px" width="50px">
+            <div class="d-flex justify-content-center align-items-center flex-column">
+                <h2>Prestamos</h2>
+                <h2>Total:12</h2>
+            </div>
+        </div>
+        <div class="col-12 col-sm-2 bg-light d-flex usu_5 border rounded-4 flex-column justify-content-center align-items-center ">
+            <img src="/assets/img/return.png" alt="" height="50px" width="50px">
+            <div class="d-flex justify-content-center align-items-center flex-column">
+                <h3>Devoluciones</h3>
+                <h2>Pendientes:10</h2>
+            </div>
+        </div>
+    </section>
+    
+
         <!--graficas-->
-<div class="row mt-5">
-    <div class="col-12 col-sm-6 col-md-6 col-lg-6 justify-content-center d-flex align-items-center mt-3">
-        <canvas id="grafica" ></canvas>
-    </div>
-    <div class="col-sm-6 col-12 col-md-6 col-lg-6 justify-content-center d-flex align-items-center mt-3">
-        <canvas id="myChart" ></canvas>
-    </div>
-</div>
-        <!-- </div>-->
-<!--footer-->
-        <footer class="row mt-5 ">
-            <div class="col-12 d-flex  justify-content-around align-items-center">
-                <div class=""><img src="assets/img/icons8-facebook-nuevo.svg" alt="" class=" "></div>
-                <div class=""><a
-                        href="https://api.whatsapp.com/send/?phone=%2B573108580280&text&type=phone_number&app_absent=0"><img
-                            src="assets/img/icons8-whatsapp.svg"></a> </div>
-                <div class=""><img src="assets/img/icons8-phone.svg" alt="" class=" "></div>
+
+        <div class="row m-1 mt-5 py-5">
+            <div class="col-12 col-sm-5 justify-content-center d-flex align-items-center flex-column  ">
+                <h2 class="m-5">Reporte semanal</h2>
+                <canvas id="grafica"></canvas>
             </div>
-            <div class="col">
-                <p class=" text-center fs-4">copyright Sena 2022 © </p>
+            <div class="col-sm-6 col-12 justify-content-center d-flex align-items-center flex-column">
+                <h2 class="m-5">Reporte General</h2>
+                <canvas id="myChart"></canvas>
             </div>
-        </footer>
-        <!--script-->
-        <script src="java/Graficas/circulo.js"></script>
-        <script src="java/Graficas/graficas.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        </div>
+    </main>
+    <footer class=" mt-5 py-3">
+        <div class="col-12 d-flex  justify-content-around align-items-center py-5">
+            <div class=""><img src="/assets/img/icons8-facebook-nuevo.svg" alt="" class=" "></div>
+            <div class=""><a
+                    href="https://api.whatsapp.com/send/?phone=%2B573108580280&text&type=phone_number&app_absent=0"><img
+                        src="/assets/img/icons8-whatsapp.svg"></a> </div>
+            <div class=""><img src="/assets/img/icons8-phone.svg" alt="" class=" "></div>
+        </div>
+        <div class="col">
+            <p class=" text-center fs-4">Copyright SISCONVER 2022 © </p>
+        </div>
+    </footer>
+
+
+
+    <!--footer
+    
+     <footer class="align-items-end d-flex flex-column m-3 ">
+        <div class="col-12 d-flex  justify-content-around align-items-center">
+            <div class=""><img src="/assets/img/icons8-facebook-nuevo.svg" alt="" class=" "></div>
+            <div class=""><a
+                    href="https://api.whatsapp.com/send/?phone=%2B573108580280&text&type=phone_number&app_absent=0"><img
+                        src="/assets/img/icons8-whatsapp.svg"></a> </div>
+            <div class=""><img src="/assets/img/icons8-phone.svg" alt="" class=" "></div>
+        </div>
+        <div class="col">
+            <p class=" text-center">copyright Sena 2022 © </p>
+        </div>
+    </footer>
+
+    -->
+
+
+
+    <!--script-->
+
+    <script src="/Graficas/Graficas/circulo.js"></script>
+    <script src="/Graficas/Graficas/graficas.js"></script>
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+
 </body>
+
 </html>

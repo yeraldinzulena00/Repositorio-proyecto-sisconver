@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en" class="min-vh-100">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+
+  <link rel="stylesheet" href="/css/neWstyle.css">
+
+  <title>Registro</title>
+</head>
+
+<body>
+
+
+  
+  <!--header-->
+ 
+  <nav class="navbar  d-flex justify-content-center align-items-center navbar-expand-lg   rounded sticky-top"> 
+    <div class="col-3 justify-content-center d-flex">
+      <div>
+        <img src="/assets/img/lulogo_PLumita.svg" alt="Logo colegioS" width="100px" height="80px">
+      </div>
+    </div>
+    <div class=" col-6  d-flex justify-content-center align-items-center ">
+      <h1>SYSTEM LIBRARY LA INDEPENDENCIA</h1>
+    </div>
+    <div class="col-sm-3 col-4 d-flex justify-content-end align-items-center">
+      <a href="home.html" title="cerrar-sesion"><button type="button" class="btn-warning btn btn-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z" />
+            <path fill-rule="evenodd"
+              d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+          </svg>
+      </a></button>
+    </div>
+  </nav>
+  <!--Contenido-registro-->
+
+  <main class="Contenedor--login">
+
+
+    <form action="" class=" Contenedor__Registro--Formulario rounded-5   text-center  " >
+
+      <h1 class="fs-1 h1">Registro</h1>
+
+      
+       <div class="row mt-4 columna__fo d-flex justify-content-center align-items-center">
+        <!--colum1form-->
+        <div class="col-sm-5 col-12  ">
+          <label for="nombre" class="form-label ">
+            <span class="label"> Nombres:</span>
+          </label>
+          <input type="text" name="nombre" placeholder="Ingrese sus nombres" required
+            class="form-control form-control-lg text-center">
+          <label for="telefono">Telefono:</label>
+          <input type="tel" name="telefono" pattern="^[/D3][0-9]{9}$" required placeholder="3*********" maxlength="10"
+            class="form-control form-control-lg text-center">
+          <label for="correo">Correo:</label>
+          <input type="email" name="correo" required placeholder="name@example.com"
+            class="form-control form-control-lg text-center">
+          <label for="N_documento">Número de Documento:</label>
+          <input type="number" name="N_documento" placeholder="###" step="1" minlength="8" required pattern="^[0-9]+"
+            class="form-control form-control-lg text-center">
+          <label for="contraseña">Contraseña:</label>
+          <input type="password" required placeholder="********" minlength="8"
+            class="form-control form-control-lg text-center">
+          <label for="c.contraseña">Confirme su contraseña:</label>
+          <input type="password" name="c.contraseña" required placeholder="*******" minlength="8"
+            class="form-control form-control-lg text-center">
+        </div>
+        <!--Columna2form-->
+        <div class="col-sm-5 col-12   ">
+          <label for="apellido">Apellidos:</label>
+          <input type="text" name="apellido" placeholder="ingrese sus apellidos" required
+            class="form-control text-center form-control-lg">
+          <label for="rol">Rol:</label>
+          <input name="rol" placeholder="Elija su rol" required list="rol"
+            class="form-control text-center form-control-lg">
+          <datalist id="rol">
+            <option value="Estudiante">Estudiante</option>
+            <option value="Docente">Docente</option>
+            <option value="Externo">Externo</option>
+          </datalist>
+          <label for="curso">Curso:</label>
+          <input name="curso" placeholder="Ingrese su curso" required list="curso"
+            class="form-control text-center form-control-lg">
+          <datalist id="curso">
+            <option value="Primero">Primero</option>
+            <option value="Segundo">Segundo</option>
+            <option value="Tercero">Tercero</option>
+            <option value="Cuarto">Cuarto</option>
+            <option value="Quinto">Quinto</option>
+            <option value="Sexto">Sexto</option>
+            <option value="Septimo">Septimo</option>
+            <option value="Octavo">Octavo</option>
+            <option value="Noveno">Noveno</option>
+            <option value="Decimo">Decimo</option>
+            <option value="Once">Once</option>
+            <option value="Otro">Otro</option>
+          </datalist>
+          <label for="T.doc" id="letra2">Tipo documento:</label>
+          <input name="T.doc" placeholder="Elija su tipo de documento" required list="T.doc"
+            class="form-control text-center form-control-lg">
+          <datalist id="T.doc">
+            <option value="Tarjeta de identidad"></option>
+            <option value="Cedula de ciudadania"></option>
+            <option value="Cedula externa"></option>
+            <option value="Otro"></option>
+          </datalist>
+          <label for="foto">Imagen perfil:
+          </label>
+          <img src="/assets/img/user-regular.svg" alt="" class="d-flex justify-content-center align-self-center"
+            width="50px" height="40px">
+          <input type="file" name="foto" placeholder="Suba una imagen" accept="image/png, .jpg"
+            class="form-control text-center form-control-lg">
+        </div>
+
+      </div>
+        <!--boton-->
+        <button type="submit" class="btn btn-danger col-6 m-1">Registrar</button>
+        <button type="submit" class="btn btn-danger col-6 m-1">Cancelar</button>
+        
+         
+       
+        <!---->
+   
+  </form>
+</div>
+</main>
+  <!---->
+
+  <!--footer-->
+  <footer class="row container-fluid  d-flex flex-column mt-5">
+    <div class="col d-flex  justify-content-around align-items-center">
+      <div class=""><img src="assets/img/icons8-facebook-nuevo.svg" alt="" class=" "></div>
+      <div class=""><a
+          href="https://api.whatsapp.com/send/?phone=%2B573108580280&text&type=phone_number&app_absent=0"><img
+            src="assets/img/icons8-whatsapp.svg"></a> </div>
+      <div class=""><img src="assets/img/icons8-phone.svg" alt="" class=" "></div>
+    </div>
+    <div class="col"></div>
+    <div class="col">
+      <p class=" text-center fs-4">copyright Sena 2022 © </p>
+    </div>
+  </footer>
+  <!--script-->
+  <script src="assets/java/reg.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/Graficas/valida.js"></script>
+</body>
+
+</html>

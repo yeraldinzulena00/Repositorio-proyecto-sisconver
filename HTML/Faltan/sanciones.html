@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" class="min-vh-100">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="sass.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="shortcut icon" href="assets/img/lulogo_PLumita.svg" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Krub:wght@200&display=swap" rel="stylesheet">
+  <title>Sanciones</title>
+</head>
+
+<body>
+  <!--header-->
+  <div class="linea">
+  </div>
+  <nav>
+    <div class="row">
+      <div class="col-sm-3 col-4 d-flex justify-content-between ">
+        <img class="T" src="assets/img/lulogo_PLumita.svg" alt="Logo colegioS" width="100px" height="100px">
+      </div>
+      <div class=" col-6  d-flex justify-content-center align-items-center ">
+        <h1>SYSTEM LIBRARY LA INDEPENDENCIA</h1>
+      </div>
+      <div class="col-sm-3 col-4 d-flex justify-content-end align-items-center">
+        <a class="nav-item" href="home.html" title="cerrar-sesion"><button type="button"
+            class="btn btn-warning m-5 btn-lg">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z" />
+              <path fill-rule="evenodd"
+                d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+            </svg>
+        </a></button>
+      </div>
+      <div class="row  d-flex justify-content-evenly rounded-4   ">
+        <div class="col-4 col-sm-2 bg-light border rounded-4 d-flex usu_a">
+          <a href="usuarios2.html"><img src="assets/img/trabajando.png" alt="" height="100px"></a>
+          <div class="d-flex justify-content-center align-items-center flex-column">
+            <h2>Usuarios</h2>
+            <h2>Total:200</h2>
+          </div>
+        </div>
+        <div class="col-4 col-sm-2 bg-light d-flex usu_4 border rounded-4">
+          <img src="assets/img/pedir-prestado.png" alt="" height="100px">
+          <div class="d-flex justify-content-center align-items-center flex-column">
+            <h2>Prestamos</h2>
+            <h2>Total:12</h2>
+          </div>
+        </div>
+        <div class="col-6 col-sm-2 bg-light d-flex usu_5 border rounded-4">
+          <img src="assets/img/return.png" alt="" height="80px">
+          <div class="d-flex justify-content-center align-items-center flex-column">
+            <h2>Devoluciones</h2>
+            <h2>Total:1</h2>
+            <h3>Pendientes:10</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--contenprin-->
+  <div class="vh-100 d-flex ">
+    <!--side-->
+    <div class="side ">
+      <a class="btn btn-light" data-bs-toggle="offcanvas" tabindex="2" href="#offcanvasExample" role="button"
+        aria-controls="offcanvasExample">Menu
+        <box-icon name='menu'></box-icon>
+      </a>
+      <div class="offcanvas offcanvas-start" tabindex="1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel"> </h5>
+          <button type="button" class=" text-reset" data-bs-dismiss="offcanvas">
+            <img src="node_modules/bootstrap-icons/icons/x-lg.svg" alt="" srcset=""> X</button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav ">
+            <div class="ico">
+              <img src="assets/img/user-regular.svg" alt="" class="" width="50px" height="50px">Hola,admin
+            </div>
+            <li class="nav-item m-1">
+              <a class="nav-link active text-white" aria-current="page" href="libros.html fs-4">
+                <box-icon type='solid' name='book-add'></box-icon>
+                <p class="fs-4"> Libros
+              </a></p>
+            </li>
+            <li class="nav-item m-1">
+              <img src="assets/img/iconos e imagenes/estrategia.png" alt="" srcset="" class="a">
+              <p class="fs-4"> <a class="nav-link text-white" href="elementos.html ">Elementos</a></p>
+            </li>
+            <li class="nav-item m-1">
+              <img src="assets/img/iconos e imagenes/usuario.png" alt="" srcset="" class="a">
+              <p class="fs-4"> <a class="nav-link text-white" href="usuarios2.html">Usuarios</a></p>
+            </li>
+            <li class="nav-item m-1">
+              <img src="assets/img/iconos e imagenes/pedir-prestado.png" alt="" srcset="" class="a">
+              <p class="fs-4"> <a class="nav-link text-white" href="pres_dev.html">Prestamos</a></p>
+            </li>
+            <li class="nav-item m-1">
+              <img src="assets/img/iconos e imagenes/home (1).png" alt="" srcset="" class="a">
+              <p class="fs-4"> <a class="nav-link text-white" href="home.html">HOME</a></p>
+            </li>
+            <li class="nav-item m-1">
+              <img src="/assets/img/iconos e imagenes/icons8-salida-64.png" alt="" srcset="" class="a">
+              <p class="fs-4"> <a class="nav-link text-white" href="inicio_sesion.html">Cerrar sesion</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--contprin-->
+    <div class="container-fluid">
+      <div class=" col-sm-4 col-12 ">
+        <form class="d-flex" role="search">
+          <input class="form-control   input-lg" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline input_i" type="submit">Buscar</button>
+        </form>
+
+      </div>
+      <!--contenidopag-->
+      <div class="d-flex flex-column justify-content-center align-items-center vh-100">
+        <div class="d-flex flex-column justify-content-end align-items-end">
+          <div class="d-flex tabla_elem flex-row justify-content-around  align-items-end ">
+            <button type="button" class="btn btn-success border-dark btn-lg border border-2 text-red"><img
+                src="node_modules/bootstrap-icons/icons/file-spreadsheet.svg" alt="" width="20px"
+                height="20px">Excel</button>
+            <button type="button" class="btn btn-light border border-dark btn-lg"><img
+                src="node_modules/bootstrap-icons/icons/file-earmark-bar-graph.svg" alt="" width="20px"
+                height="20px">Imprimir</button>
+            <button type="button" class="btn btn-danger border border-dark btn-lg "><img
+                src="node_modules/bootstrap-icons/icons/filetype-pdf.svg" alt="" width="20px"
+                height="20px">PDF</button>
+          </div>
+        </div>
+        <div class="col-10 container__cards tablas mt-4  d-flex flex-column justify-content-around ">
+          <div class="contenedor_tabla table-responsive ">
+            
+            <table class="table table-bordered  ">
+              <caption class="caption-top ">Tabla sanciones Colegio la Independencia</caption>
+              <thead>
+                <tr class="table-primary">
+                  <th scope="col">Nombre</th>
+                  <th scope="col">Apellido</th>
+                  <th scope="col">Telefono</th>
+                  <th scope="col">Rol</th>
+                  <th scope="col">Curso</th>
+                  <th scope="col">Numero documento</th>
+                  <th scope="col">Tipo Documento</th>
+                  <th scope="col">Motivo sancion</th>
+                  <th scope="col">Eliminar</th>
+                </tr>
+              </thead>
+              <tbody class="table-light">
+                <tr>
+                  <th scope="row">Pepito</th>
+                  <td>Perez</td>
+                  <td>345789456</td>
+                  <td>Estudiante</td>
+                  <td>Octavo</td>
+                  <td>123456789</td>
+                  <td>T.I</td>
+                  <td>Por que daño el libro</td>
+                  <td> <button type="reset" class="btn btn-danger border-danger"><img
+                        src="node_modules/bootstrap-icons/icons/trash3.svg" alt=""></button></td>
+                </tr>
+                <tr>
+                  <th scope="row">Pepito</th>
+                  <td>Perez</td>
+                  <td>345789456</td>
+                  <td>Estudiante</td>
+                  <td>Octavo</td>
+                  <td>123456789</td>
+                  <td>T.I</td>
+                  <td>Por que daño el libro</td>
+                  <td> <button type="reset" class="btn btn-danger border-danger"><img
+                        src="node_modules/bootstrap-icons/icons/trash3.svg" alt=""></button></td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="">
+              <div class=" d-flex  justify-content-around  w-100 ">
+                <a href="prestamos.html"><button type="reset" class="btn btn-lg btn-info">Guardar</button></a>
+              </div>
+            </div>
+            <ul class="pagination pagination-lg">
+              <li class="page-item disabled">
+                <a class="page-link">Anterior</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item active" aria-current="page">
+                <a class="page-link" href="#">2</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Siguiente</a>
+              </li>
+            </ul>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--footer-->
+  <footer class="row container-fluid  d-flex flex-column ">
+    <div class="col d-flex  justify-content-around align-items-center">
+      <div class=""><img src="assets/img/icons8-facebook-nuevo.svg" alt="" class=" "></div>
+      <div class=""> <img src="assets/img/icons8-whatsapp.svg"></div>
+      <div class=""><img src="assets/img/icons8-phone.svg" alt="" class=" "></div>
+    </div>
+    <div class="col"></div>
+    <div class="col">
+      <p class=" text-center">copyright Sena 2022 © </p>
+    </div>
+  </footer>
+  <!--script-->
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

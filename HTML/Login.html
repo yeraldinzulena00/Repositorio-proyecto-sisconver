@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <link rel="stylesheet" href="/css/newStyle.css">
+<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+
+  <link rel="shortcut icon" href="/assets/img/lulogo_PLumita.svg" type="image/x-icon">
+  
+  
+  <title>Inicio sesion</title>
+</head>
+
+<body>
+  <!--header-->
+ 
+  <nav class="navbar  d-flex justify-content-center align-items-center navbar-expand-lg ">
+    <div class="col-3 justify-content-center d-flex">
+      <div>
+        <img src="/assets/img/lulogo_PLumita.svg" alt="Logo colegioS" width="200px" height="85px">
+      </div>
+    </div>
+    <div class=" col-6  d-flex justify-content-center align-items-center ">
+      <h1 class="text-white">SYSTEM LIBRARY LA INDEPENDENCIA</h1>
+    </div>
+    <div class="col-3 justify-content-center d-flex">
+        <button type="button" class="btn btn-warning   text-white m-4">Crear cuenta</button>
+    </div>
+   
+  </nav>
+  
+  
+  
+  
+  <main class="Contenedor--login ">
+  
+    <form class=" Contenedor__login--Formulario  flex-column  d-flex justify-content-center align-items-center text-center mt-1 needs-validation" novalidate >
+  
+      <h4 >INICIO DE SESION</h4>
+  
+  
+  
+  
+  
+      <img class="img-fluid col-6" src="/assets/img/escudo-colegio-nombre.png" alt="Escudo  Colegio" width="40px" height="80px">
+  
+      <div class="col-10">
+  
+        <img src="/assets/img/usuario_inicio.png" width="30px" alt="icono usuario">
+        <label for="formGroupExampleInput" class="col-form-label-lg h1 ">Usuario</label>
+        <input type="text"  class="form-control form-control-lg  text-center"   pattern="[A-Z-a-z-@]{4,40}" id="formGroupExampleInput" placeholder="Digite su usuario"  required>
+        <div class="valid-feedback">
+            <p>Correcto..!</p>
+          </div>
+
+          <div class="invalid-feedback">
+            <p>Por Favor verifica los datos ingresados.</p>
+          </div>
+  
+      </div>
+  
+      <div class="col-10">
+        <img src="/assets/img/candado.png" width="30px" alt="">
+        <label for="formGroupExampleInput2" class="col-form-label-lg h1  ">Contraseña</label>
+        <input type="password" maxlength="8" class="form-control p-2 form-control-lg text-center" 
+          placeholder="Digite Contraseña"  pattern="[0-9]{8,20}" required >
+
+          <div class="valid-feedback">
+            <p>Correcto..!</p>
+          </div>
+
+          <div class="invalid-feedback">
+            <p >Por Favor verifica los datos ingresados.</p>
+          </div>
+  
+      </div>
+  
+      
+      <button type="submit" class="btn btn-lg col-6   btn-primary text-lingth m-4 "
+          class="text-light text-decoration-none"   >Iniciar sesión <a href="home.html"></a> </button> 
+      
+
+
+        
+      <a href="#"><h5 class=""> Olvide mi contraseña ?</h5></a>
+  
+      </div>
+    
+     
+    </form>
+    
+
+  </main>
+<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/Graficas/valida.js"></script>
+
+
+
+</body>
+
+</html>
