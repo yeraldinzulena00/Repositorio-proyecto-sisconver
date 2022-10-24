@@ -7,16 +7,17 @@ const datosIngresos = {
     // Ahora debería haber tantos background colors como datos, es decir, para este ejemplo, 4
     backgroundColor: [
         'rgba(255, 99, 132, 0.2)',
-        'rgba(232,233,161)',
-        'rgba(250,181,102)',
-        'rgba(229,112,126)',
-        'rgba(229,112,126)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
     ],// Color de fondo
     borderColor: [
-        'rgba(163,221,203,1)',
-        'rgba(232,233,161,1)',
-        'rgba(230,181,102,1)',
-        'rgba(229,112,126,1)',
+        'rgba(255, 99, 132, 0.2)',
+        'rgba(54, 162, 235, 0.2)',
+        'rgba(255, 206, 86, 0.2)',
+        'rgba(75, 192, 192, 0.2)',
+        'rgba(153, 102, 255, 0.2)',
     ],// Color del borde
     borderWidth: 4,// Ancho del borde
 };

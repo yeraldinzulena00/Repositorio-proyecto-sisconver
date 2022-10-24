@@ -38,77 +38,112 @@
       </a></button>
     </div>
   </nav>
-  <!--contenedorprin-->
-  <div class="container_prin d-flex justify-content-center align-items-center">
-    <!--form-->
-    <form action=""
-      class="con_se_u d-flex  container-fluid flex-justify-content-center rounded-5 align-items-center m-auto text-center border border-dark">
-      <div class=" row d-flex align-items-center justify-content-center m-4">
-        <h1 class="d-flex justify-content-center h1">Usuarios</h1>
-        <div class="row d-flex align-items-center ">
-          <div
-            class="imagen_usuarios col-2 d-flex justify-content-start justify-content-center align-items-start mb-3 border">
-            <img src="assets/img/usuario.png" alt="jj" width="200px" height="150px">
-            
-          </div>
-          <!--columnform1-->
-          <div class="col-6 col-sm-4 label ">
-            <div class="form"> <label for="formGroupExampleInput" class="form-label">Nombre</label>
-              <input type="text" class="form-control form-control-lg" id="formGroupExampleInput"
+
+
+    
+      
+        <div class=" form d-flex flex-column  ">
+          <form action="" class="con_se_r  col-12 rounded rounded-5 col-sm-12 d-flex justify-content-center align-items-center text-center mt-2   needs-validation">
+           <div class="row  d-flex justify-content-evenly align-items-center m-2">
+            <h1 class="d-flex justify-content-center h1">Usuarios</h1>
+            <div class="imagen_usuarios col-2 col-sm-7 d-flex justify-content-start justify-content-center align-items-start mb-3 ">
+          <img src="assets/img/usuario_usuario.png" alt="jj" width="150px" height="150px">
+          
+        </div>
+            <div class="col-12 col-sm-6 ">
+              <label for="formGroupExampleInput" class="form-label">Nombre</label>
+              <input type="text" class="form-control   form-control-lg" id="formGroupExampleInput"
                 placeholder="Ingrese su nombre" required>
-            </div>
-            <div class="form"> <label for="formGroupExampleInput" class="form-label">Telefono </label>
+                <label for="formGroupExampleInput" class="form-label">Correo</label>
+              <input type="email" class="form-control form-control-lg" id="formGroupExampleInput"
+                placeholder="Name@example" required>
+                <label for="formGroupExampleInput" class="form-label">Numero de Documento</label>
+              <input type="text" class="form-control form-control-lg" id="formGroupExampleInput"
+                placeholder="Ingrese su numero de documento" required>
+                <label for="formGroupExampleInput" class="form-label">Telefono </label>
               <input type="text" class="form-control form-control-lg" id="formGroupExampleInput"
                 placeholder="Example input placeholder" required>
             </div>
-            <div class="form"> <label for="formGroupExampleInput" class="form-label">Correo</label>
-              <input type="email" class="form-control form-control-lg" id="formGroupExampleInput"
-                placeholder="Name@example" required>
-            </div>
-            <div class="form"> <label for="formGroupExampleInput" class="form-label">Numero de Documento</label>
-              <input type="text" class="form-control form-control-lg" id="formGroupExampleInput"
-                placeholder="Ingrese su numero de documento" required>
-            </div>
-          </div>
-          <!--columnform2-->
-          <div class="col-6 col-sm-4 label ">
-            <div class="form"> <label for="formGroupExampleInput" class="form-label">Apellido</label>
+            <div class="col-12 col-sm-6">
+              <label for="formGroupExampleInput" class="form-label">Apellido</label>
               <input type="text" class="form-control form-control-lg" id="formGroupExampleInput"
                 placeholder="Ingrese su apellido" required>
+                <label for="formGroupExampleInput" class="form-label">Contraseña</label>
+          <input type="password" class="form-control  form-control-lg" id="formGroupExampleInput"
+            placeholder="Escriba nueva contraseña" required>
+            <label for="curso">Curso:</label>
+          <input name="curso" placeholder="Ingrese su curso" required list="curso"
+            class="form-control  form-control-lg">
+          <datalist id="curso">
+            <option value="Primero">Primero</option>
+            <option value="Segundo">Segundo</option>
+            <option value="Tercero">Tercero</option>
+            <option value="Cuarto">Cuarto</option>
+            <option value="Quinto">Quinto</option>
+            <option value="Sexto">Sexto</option>
+            <option value="Septimo">Septimo</option>
+            <option value="Octavo">Octavo</option>
+            <option value="Noveno">Noveno</option>
+            <option value="Decimo">Decimo</option>
+            <option value="Once">Once</option>
+            <option value="Otro">Otro</option>
+          </datalist>
+          <label for="formGroupExampleInput" class="form-label">Tipo de Documento</label>
+          <input type="text" class="form-control  form-control-lg" id="formGroupExampleInput"
+            placeholder="Tipo de documento" required>
             </div>
-            <div class="form"> <label for="formGroupExampleInput" class="form-label">Contraseña</label>
-              <input type="password" class="form-control form-control-lg" id="formGroupExampleInput"
-                placeholder="Escriba nueva contraseña" required>
+            <div class="d-grid gap-2 col-4  m-4 gx-5">
+              <button type="submit" class="btn btn-warning btn-ini btn-lg text-light">Guardar Cambios</button>
+              <button type="submit" class="btn btn-primary btn-ini btn-lg text-light"><a href="usuarios2.html" class="text-white text-decoration-none">Cancelar</a> </button>
             </div>
-            <div class="form"> <label for="curso">Curso:</label>
-              <input name="curso" placeholder="Ingrese su curso" required list="curso"
-                class="form-control form-control-lg">
-              <datalist id="curso">
-                <option value="Primero">Primero</option>
-                <option value="Segundo">Segundo</option>
-                <option value="Tercero">Tercero</option>
-                <option value="Cuarto">Cuarto</option>
-                <option value="Quinto">Quinto</option>
-                <option value="Sexto">Sexto</option>
-                <option value="Septimo">Septimo</option>
-                <option value="Octavo">Octavo</option>
-                <option value="Noveno">Noveno</option>
-                <option value="Decimo">Decimo</option>
-                <option value="Once">Once</option>
-                <option value="Otro">Otro</option>
-              </datalist>
-            </div>
-            <div class="form"> <label for="formGroupExampleInput" class="form-label">Tipo de Documento</label>
-              <input type="text" class="form-control form-control-lg" id="formGroupExampleInput"
-                placeholder="Tipo de documento" required>
-            </div>
+           </div>
+            
+           
+              
+          </form>
+        </div>
+      
+      
+   
+  
+  <!--contenedorprin-->
+  <!--<div class=" d-flex justify-content-center align-items-center form">
+    form
+    <form action=""
+    class="f2 d-flex  container-fluid flex-justify-content-center rounded-5 align-items-center m-auto text-center border border-dark">
+    <div class=" row d-flex align-items-center justify-content-center m-4">
+      
+      <div class="row d-flex align-items-center ">
+        
+        columnform1
+        <div class="col-6 col-sm-4 label ">
+          <div class="form row"> 
+          </div>
+          <div class="form"> 
+          </div>
+          <div class="form"> <label for="formGroupExampleInput" class="form-label">Correo</label>
+            <input type="email" class="form-control form-control-lg" id="formGroupExampleInput"
+              placeholder="Name@example" required>
+          </div>
+          <div class="form"> 
           </div>
         </div>
-        <div class="d-grid gap-2 col-6 mx-auto m-4">
-          <button type="submit" class="btn btn-warning btn-ini btn-lg text-light">Guardar Cambios</button>
+        columnform2
+        <div class="col-6 col-sm-4 label ">
+          <div class="form"> 
+          </div>
+          <div class="form"> 
+          </div>
+          <div class="form"> 
+          </div>
+          <div class="form"> 
+          </div>
         </div>
       </div>
+      
     </form>
+    </div>-->
+    
   </div>
   <!--fopter-->
   <footer class="row container-fluid  d-flex flex-column ">
@@ -121,7 +156,7 @@
     </div>
     <div class="col"></div>
     <div class="col">
-      <p class=" text-center fs-4">copyright Sena 2022 © </p>
+      <p class=" text-center fs-4">Copyright SISCONVER 2022 © </p>
     </div>
   </footer>
   <!--script-->

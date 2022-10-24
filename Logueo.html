@@ -15,34 +15,37 @@
 
 <body>
   <!--header-->
-  <div class="linea sticky-top">
-  </div>
-  <nav class="navbar row d-flex justify-content-center align-items-center navbar-expand-lg   rounded sticky-top"> 
-    <div class="col-3 justify-content-center d-flex">
-      <div>
-        <img src="assets/img/lulogo_PLumita.svg" alt="Logo colegioS" width="100px" height="80px">
+  <header>
+    <div class="linea sticky-top">
+    </div>
+    <nav class="navbar row d-flex justify-content-center align-items-center navbar-expand-lg   rounded sticky-top"> 
+      <div class="col-3 justify-content-center d-flex">
+        <div>
+          <img src="assets/img/lulogo_PLumita.svg" alt="Logo colegioS" width="100px" height="80px">
+        </div>
       </div>
-    </div>
-    <div class=" col-6  d-flex justify-content-center align-items-center ">
-      <h1>SYSTEM LIBRARY LA INDEPENDENCIA</h1>
-    </div>
-    <div class="col-sm-3 col-4 d-flex justify-content-end align-items-center">
-      <a href="home.html" title="cerrar-sesion"><button type="button" class="btn-warning btn btn-lg">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-            class="bi bi-box-arrow-right" viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z" />
-            <path fill-rule="evenodd"
-              d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
-          </svg>
-      </a></button>
-    </div>
-  </nav>
+      <div class=" col-6  d-flex justify-content-center align-items-center ">
+        <h1>SYSTEM LIBRARY LA INDEPENDENCIA</h1>
+      </div>
+      <div class="col-sm-3 col-4 d-flex justify-content-end align-items-center">
+        <a href="inicio_sesión.html" title="cerrar-sesion"><button type="button" class="btn-warning btn btn-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z" />
+              <path fill-rule="evenodd"
+                d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+            </svg>
+        </a></button>
+      </div>
+    </nav>
+  </header>
+  
   <!--Contenido-registro-->
   <div class=" g-3 d-flex row container_prin justify-content-center align-items-center  ">
     <form action="" class=" con_se_u rounded-5 text-center " method="post"
-      enctype="multipart/form-data" target="self">
-      <div class="row  d-flex justify-content-evenly align-items-center ">
+      enctype="multipart/form-data" target="self" id="form">
+      <div class="row  d-flex justify-content-evenly align-items-center " id="fomr1">
         <h1 class="fs-1 h1">Registro</h1>
         <!--colum1form-->
         <div class="col-sm-5 col-12  ">
@@ -58,14 +61,15 @@
           <input type="email" name="correo" required placeholder="name@example.com"
             class="form-control form-control-lg text-center">
           <label for="N_documento">Número de Documento:</label>
-          <input type="number" name="N_documento" placeholder="###" step="1" minlength="8" required pattern="^[0-9]+"
+          <input type="number" id="documento" name="N_documento" placeholder="###" pattern="^[0-9]+" minlength="10" required 
             class="form-control form-control-lg text-center">
           <label for="contraseña">Contraseña:</label>
-          <input type="password" required placeholder="********" minlength="8"
+          <input type="password" required placeholder="********" minlength="8" 
             class="form-control form-control-lg text-center">
           <label for="c.contraseña">Confirme su contraseña:</label>
           <input type="password" name="c.contraseña" required placeholder="*******" minlength="8"
             class="form-control form-control-lg text-center">
+
         </div>
         <!--Columna2form-->
         <div class="col-sm-5 col-12  ">
@@ -115,8 +119,8 @@
         </div>
         <!--boton-->
         <div class="d-grid gap-2 col-4 mx-auto m-3">
-          <button type="submit" class="btn btn btn-ini button btn-lg btn-warning preview"><a class="text-white "
-              href="registro.html">Registrarse</a></button>
+          <button type="submit" class="btn btn btn-ini button btn-lg btn-warning preview "><a class="text-white text-decoration-none"
+              href="inicio_sesión.html">Registrarse</a></button>
         </div>
         <!---->
       </div>
@@ -135,13 +139,13 @@
     </div>
     <div class="col"></div>
     <div class="col">
-      <p class=" text-center fs-4">copyright Sena 2022 © </p>
+      <p class=" text-center fs-4">Copyright SISCONVER 2022 ©</p>
     </div>
   </footer>
   <!--script-->
   <script src="assets/java/reg.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
+  <script src="java/registro.js"></script>
 </body>
 
 </html>
